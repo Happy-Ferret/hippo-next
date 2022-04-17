@@ -24,7 +24,7 @@ app.on("open-file", (event, filePath) => {
 
 let win;
 
-let image = createNativeImage("./img/icon.png");
+let image = createNativeImage("./img/hippo.png");
 if (app.dock) {
   app.dock.setIcon(image);
 }
@@ -107,10 +107,10 @@ function createWindow() {
     height: 600,
     minWidth: 290,
     minHeight: 290,
-    icon: __dirname + "/img/icon.png",
-    title: "Media Player",
+    icon: __dirname + "/img/hippo.png",
+    title: "Hippo Player",
     hasShadow: true,
-    frame: false,
+    frame: true,
     center: true,
     titleBarStyle: "hidden-inset"
   });
@@ -153,4 +153,3 @@ app.on("ready", createWindow);
 app.on("window-all-closed", () => app.quit());
 
 app.on("activate", () => (win === null) ? createWindow() : 0);
-

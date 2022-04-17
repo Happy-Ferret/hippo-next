@@ -85,14 +85,6 @@
   background-color: rgba(0,0,0,0.1);
 }
 
-.caption-button.close:hover::before{
-  background-color: #15ced9;
-}
-
-.light .caption-button.close:hover::before {
-  filter: none;
-}
-
 .caption-button::before {
   content: "";
   display: inline-block;
@@ -118,22 +110,6 @@
 :root:not(.electron) .caption-button.fullscreen::before,
 .electron.osx .caption-button.fullscreen::before {
   transform: scale(1.25);
-}
-
-.caption-button.close::before {
-  background-image: url(../img/electron/close.svg);
-}
-
-.caption-button.maximize::before {
-  background-image: url(../img/electron/maximize.svg);
-}
-
-.caption-button.restore::before {
-  background-image: url(../img/electron/restore.svg);
-}
-
-.caption-button.minimize::before {
-  background-image: url(../img/electron/minimize.svg);
 }
 
 .caption-button.fullscreen::before {

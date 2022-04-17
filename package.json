@@ -1,8 +1,8 @@
 {
-  "name": "media-player",
-  "productName": "Media Player",
-  "version": "1.0.0",
-  "description": "An modern, clean media player built using HTML 5 technologies.",
+  "name": "hippo-player",
+  "productName": "Hippo Player Next",
+  "version": "0.0.1",
+  "description": "A modern Hippo Player (of Amiga fame) homage/replacement built on modern technology.",
   "main": "main.js",
   "scripts": {
     "start": "./node_modules/.bin/electron .",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nt1m/media-player.git"
+    "url": "git+https://github.com/Happy-Ferret/hippo-next.git"
   },
   "keywords": [
     "Media",
@@ -24,16 +24,12 @@
     "music",
     "video"
   ],
-  "author": "Tim Nguyen",
-  "contributors": [
-    "Mohamed Hadjoudj",
-    "Daniell Mesquita"
-  ],
+  "author": "Mark 'Happy-Ferret' Bauermeister",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nt1m/media-player/issues"
+    "url": "https://github.com/Happy-Ferret/hippo-next/issues"
   },
-  "homepage": "https://github.com/nt1m/media-player#readme",
+  "homepage": "https://puddingbot.github.io/blog",
   "devDependencies": {
     "electron": "^13.6.6",
     "electron-packager": "^8.6.0",

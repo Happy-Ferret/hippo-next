@@ -189,6 +189,5 @@ input[type=checkbox] {
   border: white 1px solid;
 }
 input[type=checkbox]:checked {
-  background-color: white;
+  background: transparent url(../img/checkmark.png) no-repeat 80% 50%
 }
-

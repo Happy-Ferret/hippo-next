@@ -200,7 +200,7 @@ var MediaPlayer = {
       this.controlsEl.classList.add("disabled");
       this.headerEl.textContent = "";
       this.headerEl.title = "";
-      document.title = "Media Player";
+      document.title = "Hippo Player";
       this.videoEl.hidden = true;
       this.canvasEl.hidden = false;
       this.videoEl.src = "";

@@ -46,43 +46,6 @@ module.exports = {
       class: "caption-buttons",
       parent: document.getElementById("header-container")
     });
-
-    Element("button", {
-      class: "caption-button minimize",
-      parent: header,
-      onclick() {
-        remote.BrowserWindow.getFocusedWindow().minimize();
-      }
-    });
-
-    let maximizeBtn = Element("button", {
-      class: "caption-button maximize",
-      parent: header,
-      onclick() {
-        let focusedWindow = remote.BrowserWindow.getFocusedWindow();
-        if (focusedWindow.isMaximized()) {
-          focusedWindow.unmaximize();
-        } else {
-          focusedWindow.maximize();
-        }
-      }
-    });
-
-    Element("button", {
-      class: "caption-button close",
-      parent: header,
-      onclick() {
-        window.close();
-      }
-    });
-
-    let focusedWindow = remote.BrowserWindow.getFocusedWindow();
-    focusedWindow.on("unmaximize", () => {
-      maximizeBtn.className = "caption-button maximize";
-    });
-    focusedWindow.on("maximize", () => {
-      maximizeBtn.className = "caption-button restore";
-    });
   },
 
   handleVideoAction(event, action) {

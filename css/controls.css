@@ -174,7 +174,7 @@
 .menu {
   position: absolute;
   transition: all .3s;
-  left: 0
+  left: 0;
   vertical-align: middle;
   border-radius: 2px;
   background: black;

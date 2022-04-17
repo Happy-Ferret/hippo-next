@@ -70,7 +70,7 @@ SettingsStore.prototype = {
     },
     {
       id: "electron.always-on-top",
-      name: "Pin window on top of other windows",
+      name: "Keep application in foreground",
       default: false,
       hidden: !this.isElectron,
       type: "checkbox",
